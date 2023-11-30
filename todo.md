@@ -1,0 +1,20 @@
+- [x] Proposal
+- [ ] Implement the dataset and dataloader
+- [x] Implement non-ML baseline (acc:55.4%-68.8%)
+- [ ] Data preprocessing (e.g. Fourier Transform, PCA, spectrogram)
+  - [ ] time domain (not processed, 1D)
+  - [ ] torchaudio.transforms (2D)
+  - [ ] torch.fft (1D)
+- [ ] ML methods design (may use)
+  - [ ] Time domain input
+  - [ ] Frequency domain input (e.g. spectrogram)
+- [ ] DL methods design (use pytorch architecture)
+  - [ ] Time domain input
+  - [ ] Frequency domain input
+- [ ] Experiment
+- [ ] Report
+  - [ ] mini “literature survey”, Understand network architectures used in similar models
+  - [ ] experimental results with various models (both ML and DL) and performance comparison. Use different architectures and hyperparameters,
+  - [ ] evidence of good data handling and processing, i.e., maintain separate test, train, and validation sets.
+- [ ] README file(s) that describe the repository structure, execution instructions, and special technical requirements.
+
