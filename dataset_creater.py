@@ -101,8 +101,6 @@ def FFT_transform(waveform):
     # Compute the Fast Fourier Transform (FFT)
     fft_result = torch.fft.fft(waveform, dim = 1)
 
-    # You may want to process the result further depending on your needs
-
     return fft_result
 
 def Spectrogram_transform(waveform, sr=44100, n_fft=2048, hop_length=512, n_mels=128):
