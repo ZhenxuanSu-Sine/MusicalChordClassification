@@ -1,12 +1,13 @@
 - [x] Proposal
-- [ ] Implement the dataset and dataloader
+- [x] Implement the dataset and dataloader
 - [x] Implement non-ML baseline (acc:55.4%-68.8%)
-- [ ] Data preprocessing (e.g. Fourier Transform, PCA, spectrogram)
-  - [ ] time domain (not processed, 1D)
-  - [ ] torchaudio.transforms (2D)
-  - [ ] torch.fft (1D)
+- [x] Data analysis & Feature engineering
+- [x] Data preprocessing (e.g. Fourier Transform, PCA, spectrogram)
+  - [x] time domain (not processed, 1D)
+  - [x] torchaudio.transforms (2D)
+  - [x] torch.fft (1D)
 - [ ] ML methods design (may use)
-  - [ ] Time domain input
+  - [ ] Time domain input (not needed)
   - [ ] Frequency domain input (e.g. spectrogram)
 - [ ] DL methods design (use pytorch architecture)
   - [ ] Time domain input
