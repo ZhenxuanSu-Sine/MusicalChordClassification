@@ -6,7 +6,7 @@ import numpy as np
 import librosa
 
 """
-DataLoader of .wav audio files with labels {'Major': 0, 'Minor': 1}
+Customized Dataset creater of .wav audio files with labels {'Major': 0, 'Minor': 1}
 
 Parameters:
     - data_folder(str): Path to the folder contains 'Major'(folder) and 'Minor'(folder).
