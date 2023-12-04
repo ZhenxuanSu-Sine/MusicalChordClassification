@@ -33,8 +33,7 @@ Example:
     '''
 
 Remark:
-    Will automatically padding the waveform to identical length
-
+    Automatically padding the waveform to identical length
 """
 
 class AudioDataset(Dataset):
