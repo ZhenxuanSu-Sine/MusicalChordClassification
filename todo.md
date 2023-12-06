@@ -6,9 +6,9 @@
   - [x] time domain (not processed, 1D)
   - [x] torchaudio.transforms (2D)
   - [x] torch.fft (1D)
-- [ ] ML methods design (may use)
-  - [ ] Time domain input (not needed)
-  - [ ] Frequency domain input (e.g. spectrogram)
+- [x] ML methods design (may use)
+  - [x] Time domain input (not needed)
+  - [x] Frequency domain input (e.g. spectrogram)
 - [ ] DL methods design (use pytorch architecture)
   - [ ] Time domain input
   - [ ] Frequency domain input
