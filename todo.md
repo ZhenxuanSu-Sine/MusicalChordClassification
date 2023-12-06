@@ -9,10 +9,10 @@
 - [x] ML methods design (may use)
   - [x] Time domain input (not needed)
   - [x] Frequency domain input (e.g. spectrogram)
-- [ ] DL methods design (use pytorch architecture)
-  - [ ] Time domain input
-  - [ ] Frequency domain input
-- [ ] Experiment
+- [x] DL methods design (use pytorch architecture)
+  - [ ] Time domain input (aborted)
+  - [x] Frequency domain input
+- [x] Experiment
 - [ ] Report
   - [ ] mini “literature survey”, Understand network architectures used in similar models
   - [ ] experimental results with various models (both ML and DL) and performance comparison. Use different architectures and hyperparameters,
