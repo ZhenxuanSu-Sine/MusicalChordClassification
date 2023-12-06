@@ -37,7 +37,7 @@ Remark:
 """
 
 class AudioDataset(Dataset):
-    def __init__(self, data_folder, transform=None):
+    def __init__(self, data_folder, transform=None, scale=(0, 1)):
         self.data_folder = data_folder
         self.transform = transform
 
@@ -47,6 +47,7 @@ class AudioDataset(Dataset):
 
         self.file_paths = []
         self.labels = []
+        self.scale = scale
 
         # Explore all files in dataset folder and calculate max length
         self.max_length = 0
@@ -63,6 +64,8 @@ class AudioDataset(Dataset):
 
                     self.file_paths.append(file_path)
                     self.labels.append(class_idx)
+
+        
 
     def __len__(self):
         return len(self.file_paths)
@@ -82,7 +85,7 @@ class AudioDataset(Dataset):
         # Apply transformations if needed
         if self.transform:
             waveform = self.transform(waveform)
-
+        waveform = (waveform - self.scale[0]) / (self.scale[1] - self.scale[0])
         return waveform, label
 
 
