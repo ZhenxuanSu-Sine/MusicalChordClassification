@@ -7,14 +7,11 @@ This project aims to implement machine learning or deep learning-based methods f
 The repository contains several key files:
 
 - `dataset_creater.py`: This script is used to generate the dataset for the project. It processes audio files and applies various transforms for chord classification.
-
 - `nonML_baseline.ipynb`: This Jupyter notebook contains the implementation of the non-machine learning baseline method for chord classification.
-
 - `ML_Frequency_domain.ipynb`: This Jupyter notebook contains the implementation of a machine learning method for chord classification, which operates in the frequency domain.
-
 - `DL_Spectrogram.ipynb`: This Jupyter notebook contains the implementation of a deep learning model for chord classification, which takes spectrograms as input.
-
 - `DL_MFCC.ipynb`: This Jupyter notebook contains the implementation of a deep learning model for chord classification, which takes Mel-frequency cepstral coefficients (MFCCs) as input.
+- `DL_MinibatchClipping.ipynb`: This Jupyter notebook contains the implementation of a deep learning model for chord classification, which takes the absolute value of spectrogram of resampled waveform with sample rate 16k.
 
 ## Data
 The data for this project is not included in the repository. It should be downloaded separately from [Kaggle](https://www.kaggle.com/datasets/deepcontractor/musical-instrument-chord-classification/data) and moved to the `./data` folder in the repository.
@@ -25,7 +22,7 @@ To set up and execute the project, follow these steps:
 1. Clone the repository to your local machine.
 2. Download the data and move it to the `./data` folder in the repository.
 3. Install the necessary dependencies (listed below).
-5. (To train) Open and run one of the four the Jupyter notebooks to execute the chord classification methods.
+5. (To train) Open and run one of the five Jupyter notebooks to execute the chord classification methods.
 5. (To load and deploy the model) Use `model.load_state_dict(torch.load(PATH_TO_FILE))`
 
 ## Dependencies
